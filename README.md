@@ -1,6 +1,6 @@
 # Add-in Command Demo Outlook Add-in jia hao
 
-The Add-in Command Demo add-in uses the commands model for Outlook add-ins to add buttons to the ribbon.
+The Add-in Command Demo add-in uses the commands model for Outlook add-ins to add buttons to the ribbon. kelivin CY 
 
 ## Prerequsites
 

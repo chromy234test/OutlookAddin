@@ -19,6 +19,12 @@
   };
   
   function insertText(textToInsert) {
+    chrome.runtime.sendMessage(
+      "foo",
+      function (response) {
+          console.log(response);
+      }
+  );
     // Insert as plain text (CoercionType.Text)
     Office.context.mailbox.item.body.setSelectedDataAsync(
       textToInsert, 
@@ -33,6 +39,24 @@
         }
       });
   }
+
+
+  function insertText2(textToInsert) {
+    // Insert as plain text (CoercionType.Text)
+    Office.context.mailbox.item.body.setSelectedDataAsync(
+      textToInsert, 
+      { coercionType: Office.CoercionType.Text }, 
+      function (asyncResult) {
+        // Display the result to the user
+        if (asyncResult.status == Office.AsyncResultStatus.Succeeded) {
+          app.showNotification("Success", "\"" + textToInsert + "\" inserted successfully.");
+        }
+        else {
+          app.showNotification("Error", "Failed to insert \"" + textToInsert + "\": " + asyncResult.error.message);
+        }
+      });
+  }
+
 
   function insertDefault() {
     insertText("Inserted by the Add-in Command Demo add-in.");

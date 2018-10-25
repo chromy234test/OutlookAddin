@@ -36,6 +36,11 @@ function addDefaultMsgToBody(event) {
   addTextToBody("Inserted by the Add-in Command Demo add-in.", "blue-icon-16", event);
 }
 
+function signDefaultMsgToBody(event) {
+  addTextToBody("Inserted by Jia hao sign Command Demo add-in.", "blue-icon-16", event);
+}
+
+
 function addMsg1ToBody(event) {
   addTextToBody("Hello World!", "red-icon-16", event);
 }

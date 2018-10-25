@@ -95,7 +95,7 @@
                     <bt:Image size="80" resid="blue-icon-80" />
                   </Icon>
                   <Action xsi:type="ExecuteFunction">
-                    <FunctionName>addDefaultMsgToBody</FunctionName>
+                    <FunctionName>signDefaultMsgToBody</FunctionName>
                   </Action>
                 </Control>
 				
@@ -213,7 +213,7 @@
                     <bt:Image size="80" resid="blue-icon-80" />
                   </Icon>
                   <Action xsi:type="ExecuteFunction">
-                    <FunctionName>addDefaultMsgToBody</FunctionName>
+                    <FunctionName>signDefaultMsgToBody</FunctionName>
                   </Action>
                 </Control>
                 <!-- Menu (dropdown) button -->
@@ -621,7 +621,7 @@
                       <bt:Image size="80" resid="blue-icon-80" />
                     </Icon>
                     <Action xsi:type="ExecuteFunction">
-                      <FunctionName>addDefaultMsgToBody</FunctionName>
+                      <FunctionName>signDefaultMsgToBody</FunctionName>
                     </Action>
                   </Control>
                   <!-- Menu (dropdown) button -->
@@ -738,7 +738,7 @@
                       <bt:Image size="80" resid="blue-icon-80" />
                     </Icon>
                     <Action xsi:type="ExecuteFunction">
-                      <FunctionName>addDefaultMsgToBody</FunctionName>
+                      <FunctionName>signDefaultMsgToBody</FunctionName>
                     </Action>
                   </Control>
                   <!-- Menu (dropdown) button -->

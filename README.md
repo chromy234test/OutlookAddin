@@ -148,6 +148,24 @@ This is created by setting the `xsi:type` attribute of a `Control` element to `B
   </Action>
 </Control>
 ```
+
+<!--Jiahao Function (UI-less) button -->
+<Control xsi:type="Button" id="msgComposeFunctionButton2">
+  <Label resid="signComposeButtonLabel" />
+  <Supertip>
+    <Title resid="signComposeSuperTipTitle" />
+    <Description resid="signComposeSuperTipDescription" />
+  </Supertip>
+  <Icon>
+    <bt:Image size="16" resid="blue-icon-16" />
+    <bt:Image size="32" resid="blue-icon-32" />
+    <bt:Image size="80" resid="blue-icon-80" />
+  </Icon>
+  <Action xsi:type="ExecuteFunction">
+    <FunctionName>signDefaultMsgToBody</FunctionName>
+  </Action>
+</Control>
+```
     
 ### A drop-down menu button ###
 

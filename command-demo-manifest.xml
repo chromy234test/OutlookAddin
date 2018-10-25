@@ -557,7 +557,8 @@
         <bt:String id="funcComposeSuperTipDescription" DefaultValue="Inserts text into body of the message or appointment. This is an example of a function button."/>
         <bt:String id="menuComposeSuperTipDescription" DefaultValue="Inserts your choice of text into body of the message or appointment. This is an example of a drop-down menu button."/>
         <bt:String id="paneComposeSuperTipDescription" DefaultValue="Opens a pane where you can enter text to insert in the body of the message or appointment. This is an example of a button that opens a task pane."/>
-
+<bt:String id="signComposeSuperTipDescription" DefaultValue="This is an example of signing"/>
+		
         <bt:String id="menuItem1ComposeTip" DefaultValue="Inserts Hello World! into the body of the message or appointment." />
         <bt:String id="menuItem2ComposeTip" DefaultValue="Inserts Add-in commands are cool! into the body of the message or appointment." />
         <bt:String id="menuItem3ComposeTip" DefaultValue="Inserts Visit Outlook Dev Center into the body of the message or appointment." />
@@ -1164,13 +1165,12 @@
           <bt:String id="menuItem1ReadLabel" DefaultValue="Get item class"/>
           <bt:String id="menuItem2ReadLabel" DefaultValue="Get date time created"/>
           <bt:String id="menuItem3ReadLabel" DefaultValue="Get item ID"/>
-        </bt:ShortStrings>
-        <bt:LongStrings>
+        </bt: Strings>
           <!-- Compose mode -->
           <bt:String id="funcComposeSuperTipDescription" DefaultValue="Inserts text into body of the message or appointment. This is an example of a function button."/>
           <bt:String id="menuComposeSuperTipDescription" DefaultValue="Inserts your choice of text into body of the message or appointment. This is an example of a drop-down menu button."/>
           <bt:String id="paneComposeSuperTipDescription" DefaultValue="Opens a pane where you can enter text to insert in the body of the message or appointment. This is an example of a button that opens a task pane."/>
-          <bt:String id="signComposeSuperTipDescription" DefaultValue="Insert signature"/>
+          <bt:String id="signComposeSuperTipDescription" DefaultValue="Insert signature example"/>
 
 
           <bt:String id="menuItem1ComposeTip" DefaultValue="Inserts Hello World! into the body of the message or appointment." />

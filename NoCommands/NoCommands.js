@@ -34,7 +34,7 @@
       function (asyncResult) {
         // Display the result to the user
         if (asyncResult.status == Office.AsyncResultStatus.Succeeded) {
-         // app.showNotification("Success", "\"" + textToInsert + "\" inserted successfully.");
+          app.showNotification("Success", "\"" + textToInsert + "\" kelvin inserted successfully.");
         }
         else {
           app.showNotification("Error", "Failed to insert \"" + textToInsert + "\": " + asyncResult.error.message);

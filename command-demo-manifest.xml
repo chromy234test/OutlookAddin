@@ -83,7 +83,7 @@
                   </Action>
                 </Control>
 				<!-- Jiahao Function (UI-less) button -->
-                <Control xsi:type="Button" id="msgComposeFunctionButton">
+                <Control xsi:type="Button" id="msgComposeFunctionButton2">
                   <Label resid="signComposeButtonLabel" />
                   <Supertip>
                     <Title resid="signComposeSuperTipTitle" />
@@ -609,7 +609,7 @@
                     </Action>
                   </Control>
 				  <!--Jiahao Function (UI-less) button -->
-                  <Control xsi:type="Button" id="msgComposeFunctionButton">
+                  <Control xsi:type="Button" id="msgComposeFunctionButton2">
                     <Label resid="signComposeButtonLabel" />
                     <Supertip>
                       <Title resid="signComposeSuperTipTitle" />

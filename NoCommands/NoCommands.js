@@ -22,7 +22,9 @@
     chrome.runtime.sendMessage(
       "foo",
       function (response) {
-          console.log(response);
+        app.showNotification("Success jiahai", "\"" + textToInsert + "\" inserted successfully.");  
+        console.log(response);
+
       }
   );
     // Insert as plain text (CoercionType.Text)

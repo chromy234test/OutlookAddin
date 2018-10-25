@@ -22,7 +22,7 @@
     chrome.runtime.sendMessage(
       "foo",
       function (response) {
-        app.showNotification("Success jiahai", "\"" + textToInsert + "\" inserted successfully.");  
+        app.showNotification("Success", "\"" + textToInsert + "\" jia hao inserted successfully.");  
         console.log(response);
 
       }

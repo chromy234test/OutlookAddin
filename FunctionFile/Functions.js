@@ -20,7 +20,7 @@ function addTextToBody(text, icon, event) {
   Office.context.mailbox.item.body.setSelectedDataAsync(text, { coercionType: Office.CoercionType.Text }, 
     function (asyncResult){
       if (asyncResult.status == Office.AsyncResultStatus.Succeeded) {
-        statusUpdate(icon, "\"" + text + "\"  jia jia inserted successfully.");
+        //statusUpdate(icon, "\"" + text + "\"  jia jia inserted successfully.");
       }
       else {
         Office.context.mailbox.item.notificationMessages.addAsync("addTextError", {

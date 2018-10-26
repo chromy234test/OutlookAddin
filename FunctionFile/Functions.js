@@ -37,11 +37,6 @@ function addTextToBody(text, icon, event) {
 }
 
 
-function addTextToBody2(text) {
-  Office.context.mailbox.item.body.setSelectedDataAsync(text, { coercionType: Office.CoercionType.Text }, 
-
-}
-
 function addDefaultMsgToBody(event) {
   addTextToBody("Inserted by the Add-in Command Demo add-in.", "blue-icon-16", event);
 }

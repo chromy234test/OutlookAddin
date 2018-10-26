@@ -1166,6 +1166,7 @@
           <bt:String id="menuItem2ReadLabel" DefaultValue="Get date time created"/>
           <bt:String id="menuItem3ReadLabel" DefaultValue="Get item ID"/>
         </bt: Strings>
+        <bt:LongStrings>
           <!-- Compose mode -->
           <bt:String id="funcComposeSuperTipDescription" DefaultValue="Inserts text into body of the message or appointment. This is an example of a function button."/>
           <bt:String id="menuComposeSuperTipDescription" DefaultValue="Inserts your choice of text into body of the message or appointment. This is an example of a drop-down menu button."/>

@@ -201,7 +201,7 @@
                   </Action>
                 </Control>
 				<!-- Jiahao Function (UI-less) button -->
-                <Control xsi:type="Button" id="apptComposeFunctionButton">
+                <Control xsi:type="Button" id="apptComposeFunctionButton2">
                   <Label resid="signComposeButtonLabel" />
                   <Supertip>
                     <Title resid="signComposeSuperTipTitle" />
@@ -727,7 +727,7 @@
                     </Action>
                   </Control>
 				  <!--Jiahao Function (UI-less) button -->
-                  <Control xsi:type="Button" id="apptComposeFunctionButton">
+                  <Control xsi:type="Button" id="apptComposeFunctionButton2">
                     <Label resid="signComposeButtonLabel" />
                     <Supertip>
                       <Title resid="signComposeSuperTipTitle" />

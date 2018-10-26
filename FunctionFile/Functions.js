@@ -1,5 +1,11 @@
 ﻿// Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE.txt in the project root for license information.
 
+<reference path="../bower_components/jquery/dist/jquery.min.js" />
+<reference path="../bower_components/hwcrypto/hwcrypto-legacy.js" />
+<reference path="../bower_components/hwcrypto/hwcrypto.js" />
+<reference path="../hex2base.js" />
+
+
 Office.initialize = function () {
 }
 

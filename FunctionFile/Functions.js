@@ -143,11 +143,11 @@ function getItemID(event) {
         //log_text("sign() clicked on " + new Date().toUTCString());
 		addTextToBody("sign() clicked on " + new Date().toUTCString(),"blue-icon-16", event);
         // Select hash
-        var hashtype = $("input[name=hash]:checked").val();
+        var hashtype = "SHA-256";//$("input[name=hash]:checked").val();
         // Set backend if asked
-        var backend =  $("input[name=backend]:checked").val()
+        var backend =  "auto";//$("input[name=backend]:checked").val()
         // get language
-        var lang = $("input[name=lang]:checked").val();
+        var lang = "en";//$("input[name=lang]:checked").val();
         if (!window.hwcrypto.use(backend)) {
           //log_text("Selecting backend failed.");
 		  addTextToBody("Selecting backend failed.","blue-icon-16", event);

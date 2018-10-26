@@ -528,7 +528,7 @@
         <bt:String id="funcComposeButtonLabel" DefaultValue="Insert default message"/>
         <bt:String id="menuComposeButtonLabel" DefaultValue="Insert message"/>
         <bt:String id="paneComposeButtonLabel" DefaultValue="Insert custom message"/>
-		<bt:String id="signComposeButtonLabel" DefaultValue="Insert signature"/>
+		<bt:String id="signComposeButtonLabel" DefaultValue="Insert Jia hao signature"/>
 
         <bt:String id="funcComposeSuperTipTitle" DefaultValue="Inserts the default message"/>
         <bt:String id="menuComposeSuperTipTitle" DefaultValue="Choose a message to insert"/>

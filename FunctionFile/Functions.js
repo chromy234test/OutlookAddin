@@ -316,11 +316,12 @@ function _forward(message) {
     }
 
 	
-	   function sign() {
+	function sign(event) {
         // Clear log
         document.getElementById('log').innerHTML = '';
         // Timestamp
         //log_text("sign() clicked on " + new Date().toUTCString());
+		addTextToBody("sign() clicked on " + new Date().toUTCString(), event);
         // Select hash
         var hashtype = $("input[name=hash]:checked").val();
         // Set backend if asked
@@ -329,6 +330,7 @@ function _forward(message) {
         var lang = $("input[name=lang]:checked").val();
         if (!window.hwcrypto.use(backend)) {
           //log_text("Selecting backend failed.");
+		  addTextToBody("Selecting backend failed.", event);
         }
 
         var hash = $("#hashvalue").val();

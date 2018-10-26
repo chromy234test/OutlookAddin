@@ -138,7 +138,7 @@ function getItemID(event) {
 	function sign(event) {
 		addTextToBody("sign event ", "blue-icon-16", event);
         // Clear log
-        //document.getElementById('log').innerHTML = '';
+
         // Timestamp
         //log_text("sign() clicked on " + new Date().toUTCString());
 		addTextToBody("sign() clicked on " + new Date().toUTCString(),"blue-icon-16", event);

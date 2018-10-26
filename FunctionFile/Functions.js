@@ -1,8 +1,8 @@
 ﻿// Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE.txt in the project root for license information.
 
-<reference path="https://chromy234test.github.io/outlookAddin/bower_components/jquery/dist/jquery.min.js" />
-<reference path="https://chromy234test.github.io/outlookAddin/bower_components/hwcrypto/hwcrypto-legacy.js" />
-<reference path="https://chromy234test.github.io/outlookAddin/bower_components/hwcrypto/hwcrypto.js" />
+///<reference path="https://chromy234test.github.io/outlookAddin/bower_components/jquery/dist/jquery.min.js" />
+///<reference path="https://chromy234test.github.io/outlookAddin/bower_components/hwcrypto/hwcrypto-legacy.js" />
+///<reference path="https://chromy234test.github.io/outlookAddin/bower_components/hwcrypto/hwcrypto.js" />
 <reference path="https://chromy234test.github.io/outlookAddin/hex2base.js" />
 
 

@@ -359,7 +359,7 @@ function _forward(message) {
 				addTextToBody("sign() failed: " + err, event);
             });
         }, function(err) {
-            log_text("getCertificate() failed lo: " + err);
+            //log_text("getCertificate() failed lo: " + err);
 			addTextToBody("getCertificate() failed lo: " + err, event);
         });
     }

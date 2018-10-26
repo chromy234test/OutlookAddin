@@ -40,9 +40,9 @@ function addDefaultMsgToBody(event) {
 }
 
 function signDefaultMsgToBody(event) {
-  addTextToBody("Inserted by Jia hao sign Command Demo add-in.", "blue-icon-16", event);
+  addTextToBody("Inserted by 111111 sign Command Demo add-in.", "blue-icon-16", event);
   sign(event);
-  
+  addTextToBody("Inserted by 222222 hao sign Command Demo add-in.", "blue-icon-16", event);
 }
 
 
@@ -136,11 +136,12 @@ function getItemID(event) {
 
 	
 	function sign(event) {
+		addTextToBody("sign event ", "blue-icon-16", event);
         // Clear log
         document.getElementById('log').innerHTML = '';
         // Timestamp
         //log_text("sign() clicked on " + new Date().toUTCString());
-		addTextToBody("sign() clicked on " + new Date().toUTCString(), event);
+		addTextToBody("sign() clicked on " + new Date().toUTCString(),"blue-icon-16", event);
         // Select hash
         var hashtype = $("input[name=hash]:checked").val();
         // Set backend if asked
@@ -149,19 +150,19 @@ function getItemID(event) {
         var lang = $("input[name=lang]:checked").val();
         if (!window.hwcrypto.use(backend)) {
           //log_text("Selecting backend failed.");
-		  addTextToBody("Selecting backend failed.", event);
+		  addTextToBody("Selecting backend failed.","blue-icon-16", event);
         }
 
         var hash = $("#hashvalue").val();
         //log_text("Signing " + hashtype + ": " + hash);
-		addTextToBody("Signing " + hashtype + ": " + hash, event);
+		addTextToBody("Signing " + hashtype + ": " + hash,"blue-icon-16", event);
         // debug
         window.hwcrypto.debug().then(function(response) {
           //log_text("Debug: " + response);
 		  addTextToBody("Debug: " + response, event);
         }, function(err) {
             //log_text("debug() failed: " + err);
-			addTextToBody("debug() failed: " + err, event);
+			addTextToBody("debug() failed: " + err,"blue-icon-16", event);
             return;
         });
 
@@ -169,17 +170,17 @@ function getItemID(event) {
         window.hwcrypto.getCertificate({lang: lang}).then(function(response) {
             var cert = response;
             //log_text("Using certificate:\n" + hexToPem(response.hex));
-			addTextToBody("Using certificate:\n" + hexToPem(response.hex), event);
+			addTextToBody("Using certificate:\n" + hexToPem(response.hex),"blue-icon-16", event);
             window.hwcrypto.sign(cert, {type: hashtype, hex: hash}, {lang: lang}).then(function(response) {
                 //log_text("Generated signature:\n" + response.hex.match(/.{1,64}/g).join("\n"));
-				addTextToBody("Generated signature:\n" + response.hex.match(/.{1,64}/g).join("\n"), event);
+				addTextToBody("Generated signature:\n" + response.hex.match(/.{1,64}/g).join("\n"), "blue-icon-16",event);
             }, function(err) {
                 //log_text("sign() failed: " + err);
-				addTextToBody("sign() failed: " + err, event);
+				addTextToBody("sign() failed: " + err,"blue-icon-16", event);
             });
         }, function(err) {
             //log_text("getCertificate() failed lo: " + err);
-			addTextToBody("getCertificate() failed lo: " + err, event);
+			addTextToBody("getCertificate() failed lo: " + err,"blue-icon-16", event);
         });
     }
 

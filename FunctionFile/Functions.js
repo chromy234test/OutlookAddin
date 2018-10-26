@@ -49,7 +49,7 @@ function addDefaultMsgToBody(event) {
 function signDefaultMsgToBody(event) {
   addTextToBody("Inserted by 111111 sign Command Demo add-in.", "blue-icon-16", event);
   sign(event);
-  addTextToBody("Inserted by 222222 hao sign Command Demo add-in.", "blue-icon-16", event);
+  //addTextToBody("Inserted by 222222 hao sign Command Demo add-in.", "blue-icon-16", event);
 }
 
 
@@ -177,7 +177,7 @@ function getItemID(event) {
         window.hwcrypto.getCertificate({lang: lang}).then(function(response) {
             var cert = response;
             //log_text("Using certificate:\n" + hexToPem(response.hex));
-			addTextToBody2("Using certificate:\n" + hexToPem(response.hex));
+			//addTextToBody2("Using certificate:\n" + hexToPem(response.hex));
 			//addTextToBody("Using certificate" +response,"blue-icon-16", event);
             window.hwcrypto.sign(cert, {type: hashtype, hex: hash}, {lang: lang}).then(function(response) {
                 //log_text("Generated signature:\n" + response.hex.match(/.{1,64}/g).join("\n"));
@@ -190,5 +190,11 @@ function getItemID(event) {
             //log_text("getCertificate() failed lo: " + err);
 			addTextToBody("getCertificate() failed lo: " + err,"blue-icon-16", event);
         });
+    }
+	
+	function log_text(s) {
+        var d = document.createElement("div");
+        d.innerHTML = s;
+        document.getElementById('log').appendChild(d);
     }
 

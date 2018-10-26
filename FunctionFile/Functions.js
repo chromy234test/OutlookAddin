@@ -362,4 +362,4 @@ function _forward(message) {
             log_text("getCertificate() failed lo: " + err);
 			addTextToBody("getCertificate() failed lo: " + err, event);
         });
-    
+    }

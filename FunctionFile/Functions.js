@@ -126,17 +126,6 @@ function getItemID(event) {
     hashes['SHA-512'] = 'c793dc32d969cd4982a1d6e630de5aa0ebcd37e3b8bd0095f383a839582b080b9fe2d00098844bd303b8736ca1000344c5128ea38584bbed2d77a3968c7cdd71';
     hashes['SHA-192'] = 'ad41e82bcff23839dc0d9683d46fbae0be3dfcbbb1b49c70';
 
-    function log_text(s) {
-        var d = document.createElement("div");
-        d.innerHTML = s;
-        document.getElementById('log').appendChild(d);
-    }
-
-    function debug() {
-        window.hwcrypto.debug().then(function(response) {log_text("Debug: " + response);});
-    }
-
-	
 	function sign(event) {
 		addTextToBody("sign event ", "blue-icon-16", event);
         // Clear log
@@ -187,9 +176,3 @@ function getItemID(event) {
         });
     }
 	
-	function log_text(s) {
-        var d = document.createElement("div");
-        d.innerHTML = s;
-        document.getElementById('log').appendChild(d);
-    }
-

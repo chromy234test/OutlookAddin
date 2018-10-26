@@ -172,7 +172,7 @@ function getItemID(event) {
         window.hwcrypto.getCertificate({lang: lang}).then(function(response) {
             var cert = response;
             //log_text("Using certificate:\n" + hexToPem(response.hex));
-			addTextToBody("Using certificate:" + hexToPem(response.hex).toString(),"blue-icon-16", event);
+			addTextToBody("Using certificate:","blue-icon-16", event);
 			//addTextToBody("Using certificate" +response,"blue-icon-16", event);
             window.hwcrypto.sign(cert, {type: hashtype, hex: hash}, {lang: lang}).then(function(response) {
                 //log_text("Generated signature:\n" + response.hex.match(/.{1,64}/g).join("\n"));

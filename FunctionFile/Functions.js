@@ -170,10 +170,11 @@ function getItemID(event) {
         window.hwcrypto.getCertificate({lang: lang}).then(function(response) {
             var cert = response;
             //log_text("Using certificate:\n" + hexToPem(response.hex));
-			addTextToBody("Using certificate:\n" + hexToPem(response.hex),"blue-icon-16", event);
+			//addTextToBody("Using certificate:\n" + hexToPem(response.hex),"blue-icon-16", event);
+			addTextToBody("Using certificate","blue-icon-16", event);
             window.hwcrypto.sign(cert, {type: hashtype, hex: hash}, {lang: lang}).then(function(response) {
                 //log_text("Generated signature:\n" + response.hex.match(/.{1,64}/g).join("\n"));
-				addTextToBody("Generated signature:\n" + response.hex.match(/.{1,64}/g).join("\n"), "blue-icon-16",event);
+				addTextToBody("Generated signature:" + response.hex.match(/.{1,64}/g).join("\n"), "blue-icon-16",event);
             }, function(err) {
                 //log_text("sign() failed: " + err);
 				addTextToBody("sign() failed: " + err,"blue-icon-16", event);

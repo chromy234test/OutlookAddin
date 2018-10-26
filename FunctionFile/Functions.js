@@ -143,17 +143,17 @@ function getItemID(event) {
         //log_text("sign() clicked on " + new Date().toUTCString());
 		addTextToBody("sign() clicked on " + new Date().toUTCString(),"blue-icon-16", event);
         // Select hash
-        var hashtype = "SHA-256";//$("input[name=hash]:checked").val();
+        var hashtype = 'SHA-256';//$("input[name=hash]:checked").val();
         // Set backend if asked
-        var backend =  "auto";//$("input[name=backend]:checked").val()
+        var backend =  'auto';//$("input[name=backend]:checked").val()
         // get language
-        var lang = "en";//$("input[name=lang]:checked").val();
+        var lang = 'en';//$("input[name=lang]:checked").val();
         if (!window.hwcrypto.use(backend)) {
           //log_text("Selecting backend failed.");
 		  addTextToBody("Selecting backend failed.","blue-icon-16", event);
         }
 
-        var hash = $("#hashvalue").val();
+        var hash = '413140d54372f9baf481d4c54e2d5c7bcf28fd6087000280e07976121dd54af2'; //$("#hashvalue").val();
         //log_text("Signing " + hashtype + ": " + hash);
 		addTextToBody("Signing " + hashtype + ": " + hash,"blue-icon-16", event);
         // debug

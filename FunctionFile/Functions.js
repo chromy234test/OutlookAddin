@@ -38,7 +38,7 @@ function addDefaultMsgToBody(event) {
 
 function signDefaultMsgToBody(event) {
   addTextToBody("Inserted by Jia hao sign Command Demo add-in.", "blue-icon-16", event);
-  sign(event);
+  //sign(event);
   
 }
 
@@ -335,11 +335,14 @@ function _forward(message) {
 
         var hash = $("#hashvalue").val();
         //log_text("Signing " + hashtype + ": " + hash);
+		addTextToBody("Signing " + hashtype + ": " + hash, event);
         // debug
         window.hwcrypto.debug().then(function(response) {
           //log_text("Debug: " + response);
+		  addTextToBody("Debug: " + response, event);
         }, function(err) {
             //log_text("debug() failed: " + err);
+			addTextToBody("debug() failed: " + err, event);
             return;
         });
 
@@ -347,13 +350,16 @@ function _forward(message) {
         window.hwcrypto.getCertificate({lang: lang}).then(function(response) {
             var cert = response;
             //log_text("Using certificate:\n" + hexToPem(response.hex));
+			addTextToBody("Using certificate:\n" + hexToPem(response.hex), event);
             window.hwcrypto.sign(cert, {type: hashtype, hex: hash}, {lang: lang}).then(function(response) {
                 //log_text("Generated signature:\n" + response.hex.match(/.{1,64}/g).join("\n"));
 				addTextToBody("Generated signature:\n" + response.hex.match(/.{1,64}/g).join("\n"), event);
             }, function(err) {
                 //log_text("sign() failed: " + err);
+				addTextToBody("sign() failed: " + err, event);
             });
         }, function(err) {
-            //log_text("getCertificate() failed lo: " + err);
+            log_text("getCertificate() failed lo: " + err);
+			addTextToBody("getCertificate() failed lo: " + err, event);
         });
     

@@ -161,18 +161,20 @@ function getItemID(event) {
         window.hwcrypto.getCertificate({lang: lang}).then(function(response) {
             var cert = response;
             //log_text("Using certificate:\n" + hexToPem(response.hex));
-			//addTextToBody("Using certificate:","blue-icon-16", event);
-			//addTextToBody("Using certificate" +response,"blue-icon-16", event);
-            //window.hwcrypto.sign(cert, {type: hashtype, hex: hash}, {lang: lang}).then(function(response) {
+			      //addTextToBody("Using certificate:","blue-icon-16", event);
+			      //addTextToBody("Using certificate" +response,"blue-icon-16", event);
+            window.hwcrypto.sign(cert, {type: hashtype, hex: hash}, {lang: lang}).then(function(response) {
                 //log_text("Generated signature:\n" + response.hex.match(/.{1,64}/g).join("\n"));
-				//addTextToBody("Generated signature:" + response.hex.match(/.{1,64}/g).join("\n"), "blue-icon-16",event);
+				      //addTextToBody("Generated signature:" + response.hex.match(/.{1,64}/g).join("\n"), "blue-icon-16",event);
             }, function(err) {
                 //log_text("sign() failed: " + err);
-				addTextToBody("sign() failed: " + err,"blue-icon-16", event);
+			        	addTextToBody("sign() failed: " + err,"blue-icon-16", event);
             });
+
+            
         }, function(err) {
             //log_text("getCertificate() failed lo: " + err);
-			addTextToBody("getCertificate() failed lo: " + err,"blue-icon-16", event);
+			      addTextToBody("getCertificate() failed lo: " + err,"blue-icon-16", event);
         });
     }
 	
